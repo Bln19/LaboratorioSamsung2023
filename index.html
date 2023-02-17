@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Create Account</title>
+        <link rel="stylesheet" href="./style.css" type="text/css"/>
+    </head>
+   
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <h1> Create Account </h1>
+            </div>
+            <form class = "form" id="form">
+                <div class="form-control">
+                    <label for="username">Nombre</label>
+                    <input type="text" id="username" name="username">
+                    <img id ="ok_user" src="./images/success-icon.svg" alt="check" width="20" height="20"></img>
+                    <img id = "nok_user" src="./images/error-icon.svg" alt="error" width="20" height="20"> </img>
+                    <small> El nombre de usuario debe ser tipo texto. </small>
+                </div>
+        
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="text" id="email">
+                    <img id ="ok_email" src="./images/success-icon.svg" alt="check" width="20" height="20"></img>
+                    <img id = "nok_email" src="./images/error-icon.svg" alt="error" width="20" height="20"> </img>
+                    <small> Email inválido</small>
+                </div>
+        
+                <div class="form-control">
+                    <label>Clave</label>
+                    <input type="text" id="password">
+                    <img id ="ok_clave" src="./images/success-icon.svg" alt="check" width="20" height="20" ></img>
+                    <img id = "nok_clave" src="./images/error-icon.svg" alt="error" width="20" height="20" > </img>
+                    <small> La clave debe contener como mínimo 8 caracteres</small>
+        
+                </div>
+        
+                <div class="form-control">
+                    <label>Confirme su clave</label>
+                    <input type="text" id="password_check">
+                    <img id ="ok_clavec" src="./images/success-icon.svg" alt="check" width="20" height="20"></img>
+                    <img id = "nok_clavec" src="./images/error-icon.svg" alt="error" width="20" height="20"> </img>
+                    <small> Las claves no coinciden</small>
+        
+                </div>
+        
+                <button type="submit" onclick="return validation()" class="form_button">ENVIAR</button>
+                
+            </form>
+
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+    
+
+
+</html>

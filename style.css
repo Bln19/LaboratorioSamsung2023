@@ -1,0 +1,107 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #acbae1;
+}
+
+.header {
+	padding: 10px 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+}
+body {
+
+    background-color: #242933;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+}
+.container{
+    background-color: #2f3644;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+ 
+}
+
+.form{
+    padding: 30px 20px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    
+    display: block;
+    width: 350px;
+    padding: 10px;
+    font-size: 14px;
+    
+}
+
+.form-control.success input{
+    border-color: green;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control img {
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    right: 20px;
+}
+
+.form-control.success img.ok{
+    visibility: visible;
+
+}
+
+.form-control.error img.nok{
+    visibility: visible;
+
+}
+
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: red;
+}
+
+.form button{
+    background-color: #6c63ff;
+    border: 2px solid #242933;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 2px;
+    width: 350px;
+    padding: 10px;
+ 
+}
+
